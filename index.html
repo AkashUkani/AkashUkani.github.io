@@ -8,7 +8,7 @@
       <link href="background1.css" rel="stylesheet">
       <link rel="AkashUkani.github.io/icon" href="AkashUkani.github.io/icon.ico" type="image/x-icon" />
       <style>
-          hr.type_10 {
+           hr.type_10 {
             border: 0;
             height: 41px;
             background-image: url(background/hr_type.png);
@@ -16,16 +16,52 @@
             
         }
           .text_header{
-              font-size: 40px;
+              font-size: 30px;
+              text-align: left;
+              margin-left: 10px;
+              margin-top: 10px;
           }
           p.text_header{
-              color: white;
-              text-shadow: 1px 1px 2px gray, 0 0 250px gray, 0 0 5px black;
+              color: black;
           }
           .text_info{
                   font-size: 17px;
+                margin-top: 10px;
+                line-height: 1.7;
               }
-          @media (max-width:350px){
+          div.download {
+                background-color: #e6e6e6;
+                border: 1px solid #b3b3b3;
+                border-left: 4px solid red;
+                padding: 10px 20px 10px 20px;
+                margin: 20px 25px 20px 25px; 
+            }
+            .button {
+                background-color: red; /* Green */
+                border: none;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 10px;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+            }
+
+            .button1 {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+            .list-group-item{
+                background-color:#dddddd;
+                margin-top:2px;
+            }
+            .list-group-item:hover{
+                background-color: #eeeeee;
+            }
+          @media (max-width:500px){
               .container{
                   margin: 0px;
                   padding: 0px;
@@ -40,11 +76,26 @@
                   padding-right: 30px;
               }
               .text_header{
-                  font-size: 30px;
+                  font-size: 20px;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  margin-top: 20px;
               }
               .text_info{
-                  font-size: 13px;
+                  font-size: 15px;
               }
+              div.download {
+                background-color: #e6e6e6;
+                border: 1px solid #b3b3b3;
+                border-left: 4px solid red;
+                padding: 4px 4px 4px 8px;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
           }
       </style>
   </head>
