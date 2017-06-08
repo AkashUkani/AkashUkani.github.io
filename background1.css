@@ -1,0 +1,8 @@
+.jumbotron{
+	background-image: url('background/health3.jpg');
+	color : white;
+	margin: auto;
+	background-repeat: no-repeat;
+	height: 330px;
+    width: 400px;
+}
