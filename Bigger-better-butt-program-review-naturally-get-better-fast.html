@@ -11,15 +11,21 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles" rel="stylesheet">
         <link href="background1.css" rel="stylesheet">
-        <link rel="icon" href="icon.ico" type="image/x-icon" />
+        <link rel="icon" href="Logo_small.png" type="image/x-icon" />
         <style>
-         hr.type_10 {
+           hr.type_10 {
             border: 0;
             height: 41px;
             background-image: url(background/hr_type.png);
             background-repeat: repeat;
             
-        }
+            }
+          .mb-1{
+              text-transform: uppercase;
+          }
+          li.active1{
+              background-color: aqua;
+          }
           .text_header{
               font-size: 30px;
               text-align: left;
@@ -29,36 +35,19 @@
           p.text_header{
               color: black;
           }
+          .header{
+              font-size: 40px;
+          }
           .text_info{
                   font-size: 17px;
                 margin-top: 10px;
                 line-height: 1.7;
               }
-          div.download {
-                background-color: #e6e6e6;
-                border: 1px solid #b3b3b3;
-                border-left: 4px solid red;
-                padding: 10px 20px 10px 20px;
-                margin: 20px 25px 20px 25px; 
-            }
-            .button {
-                background-color: red; /* Green */
-                border: none;
-                color: white;
-                padding: 10px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 10px;
-                cursor: pointer;
-                -webkit-transition-duration: 0.4s; /* Safari */
-                transition-duration: 0.4s;
-            }
-
-            .button1 {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            }
+            
+          .list-group-item-header{
+              text-transform: uppercase;
+          }
+            
             .list-group-item{
                 background-color:#dddddd;
                 margin-top:2px;
@@ -66,7 +55,35 @@
             .list-group-item:hover{
                 background-color: #eeeeee;
             }
+          .logo{
+              content:url(Logo_big.png);
+          }
+          
+          .dropdown-toggle{
+              font-size: 18px;
+          }
+          .dropdown-toggle:hover{
+              border-bottom: 5px solid #008ae6;
+          }
+          .dropdown:hover{
+              
+              background-color: white;
+          }
+          .navbar{
+              box-shadow: 2px 4px 20px red;
+          }
+          @media (min-width:500px){
+              .logo{
+              content:url(Logo_big.png);
+                }
+          }
           @media (max-width:500px){
+              .logo{
+                  content:url(none);
+              }
+              .logo1{
+              content: url(Logo.png);
+                }
               .container{
                   margin: 0px;
                   padding: 0px;
@@ -88,21 +105,40 @@
                   padding-right: 10px;
                   margin-top: 20px;
               }
+              .header{
+                  font-size: 30px;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  margin-top: 20px;
+              }
+              p.header{
+              color: black;
+              text-shadow: none;
+          }
+             
+              @media (max-width:400px){
+                .logo{
+                  content:url(none);
+                  }
+                  .logo1{
+                  content: url(Logo_too_small.png);
+                    }
+              }
+              @media (max-width:300px){
+                .logo{
+                  content:url(none);
+                  }
+                  .logo1{
+                  content: url(Logo_too_small_1.png);
+                    }
+              }
               .text_info{
                   font-size: 15px;
               }
-              div.download {
-                background-color: #e6e6e6;
-                border: 1px solid #b3b3b3;
-                border-left: 4px solid red;
-                padding: 4px 4px 4px 8px;
-                margin-left: 0px;
-                margin-right: 0px;
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
           }
-    </style>
+      </style>
 	<script type="text/javascript">
 		var currentDate = new Date();
 		var day = currentDate.getDate();
@@ -116,29 +152,27 @@
 <body style="background-color:#eeeeee;">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-nav.js"></script>
     
-    <div class="navbar navbar-inverse navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+    <div class="container">
+            
+            
+            <nav class="navbar navbar-static-top" style="padding-bottom:5px;">
+                <a href="Logomakr_8GyQIT.png"><img  class="logo" style="margin-top:10px;margin-left:20px;margin-bottom:10px;"></a>
+              <div class="container-fluid">
+                  
+                <div class="navbar-header">
+                    <a href="#"><img  class="logo1" style="margin-top:10px;margin-left:20px;margin-bottom:10px;"></a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						<span class="icon-bar" style="background-color:#004080;"></span>
+						<span class="icon-bar" style="background-color:#004080;"></span>
+						<span class="icon-bar" style="background-color:#004080;"></span>
 					</button>
-                    
-					   <a href="s" class="navbar-brand" onclick="return theFunction();">Supplement Center</a>
-                        <script type="text/javascript">
-                            function theFunction () {
-                                window.location = "http://www.supplementcenters.com/";
-                                return false;
-                            }
-                        </script>
-                    
-				</div>
-					
-					
-					<div class="collapse navbar-collapse navHeaderCollapse">
-						<ul class="nav navbar-nav navbar-left">
+                </div>
+                  
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                        
+                    <ul class="nav navbar-nav navbar-left">
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Addiction <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -198,9 +232,11 @@
                                 </ul>
                             </li>
 						</ul>
-					</div>	
-			</div>
-		</div>
+                  </div>
+              </div>
+            </nav>    
+            
+        </div>
 	
     
 			

@@ -20,7 +20,7 @@
       <meta name="msvalidate.01" content="02EE7C22440D2253DD2DC800BB864CCD" />
       <link href="css/styles" rel="stylesheet">
       <link href="background1.css" rel="stylesheet">
-      <link rel="icon" href="Logo_small.png" type="image/x-icon" />
+      <link rel="icon" href="icon.ico" type="image/x-icon" />
       <style>
            hr.type_10 {
             border: 0;
@@ -31,9 +31,6 @@
             }
           .mb-1{
               text-transform: uppercase;
-          }
-          li.active1{
-              background-color: aqua;
           }
           .text_header{
               font-size: 30px;
@@ -46,6 +43,10 @@
           }
           .header{
               font-size: 40px;
+          }
+          p.header{
+              color: white;
+              text-shadow: 1px 1px 2px gray, 0 0 250px gray, 0 0 5px black;
           }
           .text_info{
                   font-size: 17px;
@@ -64,35 +65,7 @@
             .list-group-item:hover{
                 background-color: #eeeeee;
             }
-          .logo{
-              content:url(Logo_big.png);
-          }
-          
-          .dropdown-toggle{
-              font-size: 18px;
-          }
-          .dropdown-toggle:hover{
-              border-bottom: 5px solid #008ae6;
-          }
-          .dropdown:hover{
-              
-              background-color: white;
-          }
-          .navbar{
-              box-shadow: 2px 4px 20px red;
-          }
-          @media (min-width:500px){
-              .logo{
-              content:url(Logo_big.png);
-                }
-          }
           @media (max-width:500px){
-              .logo{
-                  content:url(none);
-              }
-              .logo1{
-              content: url(Logo.png);
-                }
               .container{
                   margin: 0px;
                   padding: 0px;
@@ -126,23 +99,6 @@
               color: black;
               text-shadow: none;
           }
-             
-              @media (max-width:400px){
-                .logo{
-                  content:url(none);
-                  }
-                  .logo1{
-                  content: url(Logo_too_small.png);
-                    }
-              }
-              @media (max-width:300px){
-                .logo{
-                  content:url(none);
-                  }
-                  .logo1{
-                  content: url(Logo_too_small_1.png);
-                    }
-              }
               .text_info{
                   font-size: 15px;
               }
@@ -152,31 +108,36 @@
 	
   
 	<body>
-        
-        <div class="container">
-            
-            
-            <nav class="navbar navbar-static-top" style="padding-bottom:5px;">
-                <a href="Logomakr_8GyQIT.png"><img  class="logo" style="margin-top:10px;margin-left:20px;margin-bottom:10px;"></a>
-              <div class="container-fluid">
-                  
-                <div class="navbar-header">
-                    <a href="#"><img  class="logo1" style="margin-top:10px;margin-left:20px;margin-bottom:10px;"></a>
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-						<span class="icon-bar" style="background-color:#004080;"></span>
-						<span class="icon-bar" style="background-color:#004080;"></span>
-						<span class="icon-bar" style="background-color:#004080;"></span>
+	
+		
+		
+		
+        <div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
-                </div>
-                  
-                <div class="collapse navbar-collapse navHeaderCollapse">
-                        
-                    <ul class="nav navbar-nav navbar-left">
+                    
+					   <a href="" class="navbar-brand" onclick="return theFunction();">Supplement Center</a>
+                        <script type="text/javascript">
+                            function theFunction () {
+                                window.location = "http://www.supplementcenters.com";
+                                return false;
+                            }
+                        </script>
+				</div>
+					
+					
+					<div class="collapse navbar-collapse navHeaderCollapse">
+						<ul class="nav navbar-nav navbar-left">
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Addiction <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                   
-                                  <a class="list-group-item" href="Quit-marijuana-the-complete-guide.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;"  target="_blank">
+                                  <a class="list-group-item" href="Quit-marijuana-the-complete-guide.html"  style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;"  target="_blank">
                                             <h5 class="list-group-item-header"><b> QUIT MARIJUANA  </b></h5>
                                         </a>
                                 
@@ -198,7 +159,7 @@
                                 <ul class="dropdown-menu">
                                   
                                   <a class="list-group-item" href="Ageless-body-system.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;"  target="_blank">
-                                            <h5 class="list-group-item-header"><b> AGELESS BODY SYSTEM </b></h5>
+                                            <h5 class="list-group-item-header"><b>  AGELESS BODY SYSTEM </b></h5>
                                         </a>
 
 
@@ -231,61 +192,130 @@
                                 </ul>
                             </li>
 						</ul>
-                  </div>
-              </div>
-            </nav>    
-            
-        </div>
-                
-        
+					</div>	
+			</div>
+		</div>
         
 
             
         <div class="container">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                          <li data-target="#myCarousel" data-slide-to="1"></li>
-                          <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <a href="Lean-belly-breakthrough.html" target="_blank"><img src="lean%20belly%202.jpg" alt="Los Angeles" style="width:100%;"></a>
-                          </div>
-
-                          <div class="item">
-                            <a href="Bigger-better-butt-program-review-naturally-get-better-fast.html" target="_blank"><img src="BiggerBetterButt1.png" alt="Chicago" style="width:100%;"></a>
-                          </div>
-
-                          <div class="item">
-                              <a href="Teeth-whitening-4-you-get-whiter-teeth-naturally.html" target="_blank"><img src="TeethWhitening4.jpg" alt="New york" style="width:100%;"></a>
-                          </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
             <div class="row">
-                <div class="col-md-9">  
-                      
+                <div class="col-md-9">
+                    <div  class="container">
+            
+                        <div class="row" style="margin:10px;">
+
+                            <div class="col-md-3">
+                                <img src="background/health.JPEG" class="img-thumbnail center-block" alt="Cinque Terre" width="304" height="236"> 
+                            </div>
+                            <div class="col-md-6">    
+
+                                        <p align="center" class="header">Welcome To</p>
+                                        <p align="center" class="header" >Supplement Center</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p align="justify" class="text_info text-muted"><b>we care about your health as much as you.</b></p>
+                    
+                    <p align="justify" class="text_info  text-muted"><b>And to simplify your search, our whole goal is to provide quality as a priority.</b></p>
+
+                    <p align="justify" class="text_info  text-muted"><b>No matter what every aspect of diet/nutrition/foods, to fitness/workouts/exercises and of course supplements – we review anything and everything that deals with our health & wellness.</b></p>
+                
+                    <p class="text_header">
+                        <b>Categories :</b>
+                    </p>
+                    <p align="justify" class="text_info  text-muted"> <b>Below Down You can find categories on which we have reviewed some of the best e-book.So Click on the category you want to get review.</b></p>
                     <div class="container" style="margin-bottom:30px;">
-                        
+                        <div class="row" style="margin: 10px;">
+                            
+                            <div class="col-md-3" >
+                                <div>
+                                    <a class="list-group-item" style="border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;background-color:#4d4d4d;color:rgb(255,255,255);" data-toggle="collapse" href="#collapse1">
+                                        <h3 class="list-group-item-header" align="center" style="margin-bottom:18px;"><b> ADDICTION </b></h3>
+                                    </a>
+                                    <div id="collapse1" class="panel-collapse collapse">
+                                            <a class="list-group-item" href="Quit-marijuana-the-complete-guide.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;"  target="_blank">
+                                                <h5 class="list-group-item-header"><b> QUIT MARIJUANA COMPLETE GUIDE - HOW TO QUIT WEED WITHOUT WITHDRAWALS OR SLEEPLESS NIGHTS </b></h5>
+                                            </a>
+
+                                            <a class="list-group-item" href="Quit-smoking-magic.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;"  target="_blank">
+                                                <h5 class="list-group-item-header"><b> QUIT SMOKING MAGIC </b></h5>
+                                            </a>
+
+                                            <a class="list-group-item" href="Alcohol-free-forever.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;"  target="_blank">
+                                                <h5 class="list-group-item-header"><b> ALCOHOL FREE FOREVER - HOW TO QUIT DRINKING TODAY FROM THE PRIVACY OF YOUR HOME </b></h5>
+                                            </a>
+
+
+                                            <a class="list-group-item" href="Truth-of-Addiction-proven-method-that-eliminate-addiction.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;"  target="_blank">
+                                                <h5 class="list-group-item-header"><b> TRUTH OF ADDICTION - PROVEN METHOD THAT ELIMINATE ADDICTION </b></h5>
+                                            </a>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>    
+                            <div class="col-md-3">
+                                <div >
+                                    <a class="list-group-item" style="border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;background-color:#4d4d4d;color:rgb(255,255,255);" data-toggle="collapse" href="#collapse2">
+                                        <h3 class="list-group-item-header" align="center" style="margin-bottom:18px;" ><b> BEAUTY </b></h3>
+                                    </a>
+                                    <div id="collapse2" class="panel-collapse collapse">
+
+                                            <a class="list-group-item" href="Ageless-body-system.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;">
+                                                <h5 class="list-group-item-header"><b> AGELESS BODY SYSTEM - HOW TO BE INSTANTLY AGELESS?</b></h5>
+                                            </a>
+
+
+                                            <a class="list-group-item" href="Purely-primal-skincare-guide-review.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;">
+                                                <h5 class="list-group-item-header"><b> PURELY PRIMAL SKINCARE GUIDE REVIEW - DOES IT REALLY WORK? </b></h5>
+                                            </a>
+
+
+                                            <a class="list-group-item" href="Bow-legs-no-more.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;">
+                                                <h5 class="list-group-item-header"><b> BOW LEGS NO MORE - LOOKING FOR A PERMANENT REMEDY FOR BOW LEGS WITHOUT THE NEED FOR SURGERY? </b></h5>
+                                            </a>
+                                            <a class="list-group-item" href="Skin-whitening-forever.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;">
+                                                <h5 class="list-group-item-header"><b> Skin Whitening Forever - How To Whiten Your Skin Naturally </b></h5>
+                                            </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="padding-right:20px;">
+                                <div >
+                                    <a class="list-group-item" style="border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;background-color:#4d4d4d;color:rgb(255,255,255);" data-toggle="collapse" href="#collapse3">
+                                        <h3 class="list-group-item-header" align="center" style="margin-bottom:18px;" ><b> DENTAL HEALTH </b></h3>
+                                    </a>
+                                    <div id="collapse3" class="panel-collapse collapse">
+
+                                            <a class="list-group-item" href="Dentist-be-damned-how-to-get-rid-of-toothache.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;">
+                                                <h5 class="list-group-item-header"><b> Dentist Be Damned How To Get Rid Of Toothache Review - Does It Really Work?</b></h5>
+                                            </a>
+
+
+                                            <a class="list-group-item" href="Tooth-defender-100%25-natural-oral-care-review.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;">
+                                                <h5 class="list-group-item-header"><b> Tooth Defender 100% Natural Oral Care Review - Does It Really Work? </b></h5>
+                                            </a>
+
+
+                                            <a class="list-group-item" href="Teeth-whitening-4-you-get-whiter-teeth-naturally.html" style="margin:10px;background-color:rgb(166, 166, 166);color:rgb(255,255,255);border-radius: 5px 5px;box-shadow: 5px 5px 10px #888888;">
+                                                <h5 class="list-group-item-header"><b> Teeth Whitening 4 You Review – Get Whiter Teeth Naturally </b></h5>
+                                            </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="list-group" style="margin-top:20px;">
-                                      <a href="Alcohol-free-forever.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                                      <a href="Alcohol-free-forever.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                                           <small>Addiction/</small>
                                           <p class="mb-1"><b>ALCOHOL FREE FOREVER - HOW TO QUIT DRINKING TODAY FROM THE PRIVACY OF YOUR HOME</b></p>
 
@@ -296,7 +326,7 @@
                                 
                                 <div class="col-md-4">
                                     <div class="list-group" style="margin-top:20px;">
-                                      <a href="Bow-legs-no-more.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                                      <a href="Bow-legs-no-more.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                                           <small>Beauty/</small> 
                                           <p class="mb-1"><b>Bow Legs No More - Looking for a Permanent Remedy for Bow Legs Without the Need for Surgery?</b></p>
                                           <img src="BowLegsNoMore3.jpg" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
@@ -309,7 +339,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="list-group" style="margin-top:20px;">
-                                      <a href="Dentist-be-damned-how-to-get-rid-of-toothache.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                                      <a href="Dentist-be-damned-how-to-get-rid-of-toothache.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                                           <small>Denatal Health/</small> 
                                           <p class="mb-1"><b>Dentist Be Damned How To Get Rid Of Toothache Review - Does It Really Work?</b></p>
                                           <img src="DentistBeDamned1.gif" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
@@ -319,7 +349,7 @@
                                 
                                 <div class="col-md-4">
                                     <div class="list-group" style="margin-top:20px;">
-                                      <a href="Tooth-defender-100%25-natural-oral-care-review.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                                      <a href="Tooth-defender-100%25-natural-oral-care-review.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                                           <small>Dental Health/</small> 
                                           <p class="mb-1"><b>Tooth Defender 100% Natural Oral Care Review - Does It Really Work? </b></p>
                                           <img src="ToothDefender2.jpg" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
@@ -336,14 +366,14 @@
                 <div class="col-md-3">
                     <h3 align="center"><b>Top Post Review</b></h3>
                     <div class="list-group" style="margin-top:20px;">
-                          <a href="Quit-marijuana-the-complete-guide.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;" >
+                          <a href="Quit-marijuana-the-complete-guide.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;" >
                               <small>Addiction/</small>
                               <p class="mb-1"><b>QUIT MARIJUANA COMPLETE GUIDE - HOW TO QUIT WEED WITHOUT WITHDRAWALS OR SLEEPLESS NIGHTS</b></p>
                               <img src="HowToQuitWeed1.jpg" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
                             
                           </a>
                           
-                          <a href="Quit-smoking-magic.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                          <a href="Quit-smoking-magic.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                               <small>Addiction/</small> 
                               <p class="mb-1"><b>QUIT SMOKING MAGIC REVIEW</b></p>
                               <img src="QuitSmokingMagic1.png" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
@@ -352,22 +382,22 @@
                         
                         
                             
-                            <a href="Ageless-body-system.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                            <a href="Ageless-body-system.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                               <small>Beauty/</small> 
                               <p class="mb-1"><b>Ageless Body System - HOW TO BE INSTANTLY AGELESS?</b></p>
                               <img src="AgelessBodySystem1.png" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
                             </a>
-                            <a href="Skin-whitening-forever.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                            <a href="Skin-whitening-forever.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                               <small>Beauty/</small> 
                               <p class="mb-1"><b>Skin Whitening Forever - How To Whiten Your Skin Naturally</b></p>
                               <img src="SkinWhiteningForever1.jpg" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
                             </a>
-                            <a href="Purely-primal-skincare-guide-review.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                            <a href="Purely-primal-skincare-guide-review.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                               <small>Beauty/</small> 
                               <p class="mb-1"><b>Purely Primal Skincare Guide Review - Does It Really Work ?</b></p>
                               <img src="PrimalSkincareGuide3.jpg" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
                             </a>
-                            <a href="Teeth-whitening-4-you-get-whiter-teeth-naturally.html" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
+                            <a href="Teeth-whitening-4-you-get-whiter-teeth-naturally.html" class="list-group-item list-group-item-action flex-column align-items-start" style="color:#000000;">
                               <small>Beauty/</small> 
                               <p class="mb-1"><b>Teeth Whitening 4 You Review – Get Whiter Teeth Naturally</b></p>
                               <img src="TeethWhitening1.jpg" class="img-thumbnail" alt="Cinque Terre"  style="display:block;margin-left:auto;margin-right:auto;margin:0 auto;">
