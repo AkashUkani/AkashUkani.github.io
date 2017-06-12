@@ -66,9 +66,6 @@
                 padding: 10px 20px 10px 20px;
                 margin: 20px 25px 20px 25px; 
             }
-          .logo{
-              content:url(Logo_big.png);
-          }
           
           .dropdown-toggle{
               font-size: 18px;
@@ -83,18 +80,15 @@
           .navbar{
               box-shadow: 2px 4px 20px red;
           }
-          @media (min-width:500px){
-              .logo{
-              content:url(Logo_big.png);
-                }
-          }
+        .logo{
+            margin-top:100px;
+            margin-left:20px;
+            margin-bottom:10px;
+            }
           @media (max-width:500px){
               .logo{
-                  content:url(none);
+                  content:url(Logo.png);
               }
-              .logo1{
-              content: url(Logo.png);
-                }
               .container{
                   margin: 0px;
                   padding: 0px;
@@ -141,19 +135,15 @@
              
               @media (max-width:400px){
                 .logo{
-                  content:url(none);
+                  content:url(Logo_too_small.png);
                   }
-                  .logo1{
-                  content: url(Logo_too_small.png);
-                    }
+                  
               }
               @media (max-width:300px){
                 .logo{
-                  content:url(none);
+                  content:url(Logo_too_small_1.png);
+                    margin-top: 200px;
                   }
-                  .logo1{
-                  content: url(Logo_too_small_1.png);
-                    }
               }
               .text_info{
                   font-size: 17px;
